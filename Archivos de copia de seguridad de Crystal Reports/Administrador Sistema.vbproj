@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9B284435-F748-4738-8D1C-7169078ADB8B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Administrador Sistema</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Administrador_Sistema</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Administrador Sistema.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Administrador Sistema.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Configuracion Sistema\Configuracion Sistema.vbproj">
+      <Name>Configuracion Sistema</Name>
+      <Project>{7A2A77B2-A7D9-47EF-B5A9-4E742D84A25E}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Inventario\Inventario.vbproj">
+      <Name>Inventario</Name>
+      <Project>{5D322216-114F-4728-BA90-7A485FCCFF93}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.drawing" />
+    <Import Include="system.io" />
+    <Import Include="system.windows.forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Buequeda_Tipo_Comprobante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Empresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_host.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Modulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Monedas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Municipios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Nacionalidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_paises.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Provincia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Sectores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busueda_de_Perfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="proceso\Generar_Archivo_Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proceso\Visor de Sucesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Parametros de CxP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Parametros_de_Inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Host.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Ciudades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Empresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Modulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Monedas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Municipios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Nacionalidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_pais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Perfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Sectores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_Tipo_Comprobante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\RelacionUsuario-Empresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Busquedas\Buequeda_Tipo_Comprobante.resx">
+      <DependentUpon>Buequeda_Tipo_Comprobante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Empresas.resx">
+      <DependentUpon>Busqueda_de_Empresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_host.resx">
+      <DependentUpon>Busqueda_de_host.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Modulos.resx">
+      <DependentUpon>Busqueda_de_Modulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Monedas.resx">
+      <DependentUpon>Busqueda_de_Monedas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Municipios.resx">
+      <DependentUpon>Busqueda_de_Municipios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Nacionalidades.resx">
+      <DependentUpon>Busqueda_de_Nacionalidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_paises.resx">
+      <DependentUpon>Busqueda_de_paises.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Provincia.resx">
+      <DependentUpon>Busqueda_de_Provincia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Sectores.resx">
+      <DependentUpon>Busqueda_de_Sectores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Usuarios.resx">
+      <DependentUpon>Busqueda_de_Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busueda_de_Perfiles.resx">
+      <DependentUpon>Busueda_de_Perfiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proceso\Generar_Archivo_Ventas.resx">
+      <DependentUpon>Generar_Archivo_Ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proceso\Visor de Sucesos.resx">
+      <DependentUpon>Visor de Sucesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Parametros de CxP.resx">
+      <DependentUpon>Parametros de CxP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Parametros_de_Inventario.resx">
+      <DependentUpon>Parametros_de_Inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Host.resx">
+      <DependentUpon>Registro de Host.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Ciudades.resx">
+      <DependentUpon>Registro_de_Ciudades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Empresas.resx">
+      <DependentUpon>Registro_de_Empresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Modulos.resx">
+      <DependentUpon>Registro_de_Modulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Monedas.resx">
+      <DependentUpon>Registro_de_Monedas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Municipios.resx">
+      <DependentUpon>Registro_de_Municipios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Nacionalidades.resx">
+      <DependentUpon>Registro_de_Nacionalidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_pais.resx">
+      <DependentUpon>Registro_de_pais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Perfiles.resx">
+      <DependentUpon>Registro_de_Perfiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Sectores.resx">
+      <DependentUpon>Registro_de_Sectores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Usuarios.resx">
+      <DependentUpon>Registro_de_Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_Tipo_Comprobante.resx">
+      <DependentUpon>Registro_Tipo_Comprobante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\RelacionUsuario-Empresa.resx">
+      <DependentUpon>RelacionUsuario-Empresa.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25D4DBC3-B9C3-41AF-A5EB-C6AA4B454A59}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Bancos</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Bancos</RootNamespace>
+    <StartupObject>Bancos.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Bancos.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Bancos.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Configuracion Sistema\Configuracion Sistema.vbproj">
+      <Name>Configuracion Sistema</Name>
+      <Project>{7A2A77B2-A7D9-47EF-B5A9-4E742D84A25E}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Contabilidad\Contabilidad.vbproj">
+      <Name>Contabilidad</Name>
+      <Project>{2E688401-DE0F-4350-86C9-A2A9165D62A5}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Cuentas por Pagar\Cuentas por Pagar.vbproj">
+      <Name>Cuentas por Pagar</Name>
+      <Project>{9F4AAFB6-C9E5-4136-A4C4-E485A238E949}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de cuenta de banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de documentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de Solicitudes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de tipo mov ban.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Cuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de documentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Relacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro desembolsos .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\filtro General banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro Historico banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview Conciliacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview desembolsos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview Historico banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview Relacion Movimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview reporte banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Medida Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso de Conciliacion banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\proceso de cotejo bancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\proceso impresion cheques.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso impresion solicitudes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Integrar excel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Operaciones Bancarias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso quitar cierre banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Solicitud cheque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de cuentas banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de secuencias banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de tipos mov ban.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\impresion de cheques scotia adm.vb">
+      <DependentUpon>impresion de cheques scotia adm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Conciliacion.vb">
+      <DependentUpon>Reporte de Conciliacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de cuentas banco.vb">
+      <DependentUpon>Reporte de cuentas banco.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de historico de transitos.vb">
+      <DependentUpon>Reporte de historico de transitos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de movimientos banco con bene.vb">
+      <DependentUpon>Reporte de movimientos banco con bene.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de movimientos banco.vb">
+      <DependentUpon>Reporte de movimientos banco.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte desembolsos de banco.vb">
+      <DependentUpon>Reporte desembolsos de banco.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte estado de cuentas banco.vb">
+      <DependentUpon>Reporte estado de cuentas banco.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="Dataset\Antiguedad.xsd" />
+    <EmbeddedResource Include="Busquedas\Busqueda de cuenta de banco.resx">
+      <DependentUpon>Busqueda de cuenta de banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de documentos.resx">
+      <DependentUpon>Busqueda de documentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de Solicitudes.resx">
+      <DependentUpon>Busqueda de Solicitudes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de tipo mov ban.resx">
+      <DependentUpon>Busqueda de tipo mov ban.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Cuentas.resx">
+      <DependentUpon>Filtro de Cuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de documentos.resx">
+      <DependentUpon>Filtro de documentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Relacion.resx">
+      <DependentUpon>Filtro de Relacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro desembolsos .resx">
+      <DependentUpon>Filtro desembolsos .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\filtro General banco.resx">
+      <DependentUpon>filtro General banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro Historico banco.resx">
+      <DependentUpon>Filtro Historico banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview Conciliacion.resx">
+      <DependentUpon>Preview Conciliacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview desembolsos.resx">
+      <DependentUpon>Preview desembolsos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview Historico banco.resx">
+      <DependentUpon>Preview Historico banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview Relacion Movimientos.resx">
+      <DependentUpon>Preview Relacion Movimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview reporte banco.resx">
+      <DependentUpon>Preview reporte banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Medida Reportes.resx">
+      <DependentUpon>Medida Reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso de Conciliacion banco.resx">
+      <DependentUpon>Proceso de Conciliacion banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\proceso de cotejo bancos.resx">
+      <DependentUpon>proceso de cotejo bancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\proceso impresion cheques.resx">
+      <DependentUpon>proceso impresion cheques.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso impresion solicitudes.resx">
+      <DependentUpon>Proceso impresion solicitudes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Integrar excel.resx">
+      <DependentUpon>Proceso Integrar excel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Operaciones Bancarias.resx">
+      <DependentUpon>Proceso Operaciones Bancarias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso quitar cierre banco.resx">
+      <DependentUpon>Proceso quitar cierre banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Solicitud cheque.resx">
+      <DependentUpon>Proceso Solicitud cheque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de cuentas banco.resx">
+      <DependentUpon>Registro de cuentas banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de secuencias banco.resx">
+      <DependentUpon>Registro de secuencias banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de tipos mov ban.resx">
+      <DependentUpon>Registro de tipos mov ban.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\impresion de cheques scotia adm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>impresion de cheques scotia adm.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Conciliacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Conciliacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de cuentas banco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de cuentas banco.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de historico de transitos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de historico de transitos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de movimientos banco con bene.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de movimientos banco con bene.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de movimientos banco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de movimientos banco.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte desembolsos de banco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte desembolsos de banco.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte estado de cuentas banco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte estado de cuentas banco.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Dataset\Antiguedad.xsx">
+      <DependentUpon>Antiguedad.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

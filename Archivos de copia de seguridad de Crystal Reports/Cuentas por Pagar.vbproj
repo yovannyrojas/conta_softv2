@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F4AAFB6-C9E5-4136-A4C4-E485A238E949}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Cuentas por Pagar</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Cuentas_por_Pagar</RootNamespace>
+    <StartupObject>Cuentas_por_Pagar.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Cuentas por Pagar.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Cuentas por Pagar.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <ProjectReference Include="..\Configuracion Sistema\Configuracion Sistema.vbproj">
+      <Name>Configuracion Sistema</Name>
+      <Project>{7A2A77B2-A7D9-47EF-B5A9-4E742D84A25E}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Contabilidad\Contabilidad.vbproj">
+      <Name>Contabilidad</Name>
+      <Project>{2E688401-DE0F-4350-86C9-A2A9165D62A5}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Cuentas por Cobrar\Cuentas por Cobrar.vbproj">
+      <Name>Cuentas por Cobrar</Name>
+      <Project>{C0ACAFAE-A74B-4CCE-9894-0546D3805D8B}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de Condiciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de Suplidores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de tipo suplidores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro antiguedad cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Anticipos cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Suplidores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro Facturas cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\filtro General cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro Historico cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\filtro notas cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro pagos cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\Previe antiguedad actual_cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\preview Antiguedad cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\preview antiguedad por facturas cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\preview bal a una fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\preview balance a una fecha factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\preview balance a una fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\Preview Historico cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\Preview reporte cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Medida Reportes cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso  de Facturas cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso anticipos facturas cxp .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Aplicacion Anticipos cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Nota Facturas cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Pagos Facturas cxp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\proceso pagos monedas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Condiciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Suplidores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Tipos Suplidores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de anticipos cxp aplicados.vb">
+      <DependentUpon>Reporte de anticipos cxp aplicados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de anticipos cxp detallados.vb">
+      <DependentUpon>Reporte de anticipos cxp detallados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de Antiguedad de saldos cxp.vb">
+      <DependentUpon>Reporte de Antiguedad de saldos cxp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de bal fecha cxp.vb">
+      <DependentUpon>Reporte de bal fecha cxp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de bal fecha facturas.vb">
+      <DependentUpon>Reporte de bal fecha facturas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de balance fecha cxp.vb">
+      <DependentUpon>Reporte de balance fecha cxp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de balances cxp.vb">
+      <DependentUpon>Reporte de balances cxp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de compras.vb">
+      <DependentUpon>Reporte de compras.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de condiciones cxp.vb">
+      <DependentUpon>Reporte de condiciones cxp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de notas cxp detalladas.vb">
+      <DependentUpon>Reporte de notas cxp detalladas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de notas cxp totalizadas.vb">
+      <DependentUpon>Reporte de notas cxp totalizadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de Suplidores.vb">
+      <DependentUpon>Reporte de Suplidores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte de tipos cxp.vb">
+      <DependentUpon>Reporte de tipos cxp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte facturas detalladas por Sucursales.vb">
+      <DependentUpon>Reporte facturas detalladas por Sucursales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte facturas detalladas por suplidor.vb">
+      <DependentUpon>Reporte facturas detalladas por suplidor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte facturas detalladas por Zonas.vb">
+      <DependentUpon>Reporte facturas detalladas por Zonas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte facturas por pagar.vb">
+      <DependentUpon>Reporte facturas por pagar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte facturas totalizadas por Sucursales.vb">
+      <DependentUpon>Reporte facturas totalizadas por Sucursales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte facturas totalizadas por suplidor.vb">
+      <DependentUpon>Reporte facturas totalizadas por suplidor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte facturas totalizadas por Zonas.vb">
+      <DependentUpon>Reporte facturas totalizadas por Zonas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte Historico suplidores.vb">
+      <DependentUpon>Reporte Historico suplidores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte Pagos a Factura detallado cxp.vb">
+      <DependentUpon>Reporte Pagos a Factura detallado cxp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Pagar\Reporte Pagos a Factura totalizado cxp.vb">
+      <DependentUpon>Reporte Pagos a Factura totalizado cxp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <EmbeddedResource Include="Busquedas\Busqueda de Condiciones.resx">
+      <DependentUpon>Busqueda de Condiciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de suplidores.resx">
+      <DependentUpon>Busqueda de Suplidores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de tipo suplidores.resx">
+      <DependentUpon>Busqueda de tipo suplidores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro antiguedad cxp.resx">
+      <DependentUpon>Filtro antiguedad cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Anticipos cxp.resx">
+      <DependentUpon>Filtro de Anticipos cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Suplidores.resx">
+      <DependentUpon>Filtro de Suplidores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro Facturas cxp.resx">
+      <DependentUpon>Filtro Facturas cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\filtro General cxp.resx">
+      <DependentUpon>filtro General cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro Historico cxp.resx">
+      <DependentUpon>Filtro Historico cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\filtro notas cxp.resx">
+      <DependentUpon>filtro notas cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro pagos cxp.resx">
+      <DependentUpon>Filtro pagos cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\Previe antiguedad actual_cxp.resx">
+      <DependentUpon>Previe antiguedad actual_cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\preview Antiguedad cxp.resx">
+      <DependentUpon>preview Antiguedad cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\preview antiguedad por facturas cxp.resx">
+      <DependentUpon>preview antiguedad por facturas cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\preview bal a una fecha.resx">
+      <DependentUpon>preview bal a una fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\preview balance a una fecha factura.resx">
+      <DependentUpon>preview balance a una fecha factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\preview balance a una fecha.resx">
+      <DependentUpon>preview balance a una fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\Preview Historico cxp.resx">
+      <DependentUpon>Preview Historico cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\Preview reporte cxp.resx">
+      <DependentUpon>Preview reporte cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Medida Reportes cxp.resx">
+      <DependentUpon>Medida Reportes cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso  de Facturas cxp.resx">
+      <DependentUpon>Proceso  de Facturas cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso anticipos facturas cxp .resx">
+      <DependentUpon>Proceso anticipos facturas cxp .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Aplicacion Anticipos cxp.resx">
+      <DependentUpon>Proceso Aplicacion Anticipos cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Nota Facturas cxp.resx">
+      <DependentUpon>Proceso Nota Facturas cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Pagos Facturas cxp.resx">
+      <DependentUpon>Proceso Pagos Facturas cxp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\proceso pagos monedas.resx">
+      <DependentUpon>proceso pagos monedas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Condiciones.resx">
+      <DependentUpon>Registro de Condiciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Suplidores.resx">
+      <DependentUpon>Registro de Suplidores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Tipos Suplidores.resx">
+      <DependentUpon>Registro de Tipos Suplidores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de anticipos cxp aplicados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de anticipos cxp aplicados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de anticipos cxp detallados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de anticipos cxp detallados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de Antiguedad de saldos cxp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Antiguedad de saldos cxp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de bal fecha cxp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de bal fecha cxp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de bal fecha facturas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de bal fecha facturas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de balance fecha cxp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de balance fecha cxp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de balances cxp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de balances cxp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de compras.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de compras.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de condiciones cxp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de condiciones cxp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de notas cxp detalladas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de notas cxp detalladas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de notas cxp totalizadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de notas cxp totalizadas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de Suplidores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Suplidores.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte de tipos cxp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de tipos cxp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte facturas detalladas por Sucursales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas detalladas por Sucursales.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte facturas detalladas por suplidor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas detalladas por suplidor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte facturas detalladas por Zonas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas detalladas por Zonas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte facturas por pagar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por pagar.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte facturas totalizadas por Sucursales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas totalizadas por Sucursales.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte facturas totalizadas por suplidor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas totalizadas por suplidor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte facturas totalizadas por Zonas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas totalizadas por Zonas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte Historico suplidores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte Historico suplidores.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte Pagos a Factura detallado cxp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte Pagos a Factura detallado cxp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Pagar\Reporte Pagos a Factura totalizado cxp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte Pagos a Factura totalizado cxp.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dataset\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

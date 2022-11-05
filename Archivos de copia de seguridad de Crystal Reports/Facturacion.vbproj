@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01448E21-8271-460C-AC9D-F61B79A44E14}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Facturacion</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Facturacion</RootNamespace>
+    <StartupObject>Facturacion.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Facturacion.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Facturacion.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <ProjectReference Include="..\Configuracion Sistema\Configuracion Sistema.vbproj">
+      <Name>Configuracion Sistema</Name>
+      <Project>{7A2A77B2-A7D9-47EF-B5A9-4E742D84A25E}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Cuentas por Cobrar\Cuentas por Cobrar.vbproj">
+      <Name>Cuentas por Cobrar</Name>
+      <Project>{C0ACAFAE-A74B-4CCE-9894-0546D3805D8B}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Inventario\Inventario.vbproj">
+      <Name>Inventario</Name>
+      <Project>{5D322216-114F-4728-BA90-7A485FCCFF93}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="AxInterop.MSMask">
+      <Name>AxInterop.MSMask</Name>
+      <HintPath>bin\AxInterop.MSMask.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Interop.CDO">
+      <Name>Interop.CDO</Name>
+      <HintPath>..\Menu principal\bin\Interop.CDO.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Interop.Excel">
+      <Name>Interop.Microsoft.Office.Interop.Excel</Name>
+      <HintPath>..\Menu principal\bin\Interop.Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSMask">
+      <Name>Interop.MSMask</Name>
+      <HintPath>..\Menu principal\bin\Interop.MSMask.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data">
+      <Name>Microsoft.VisualBasic.Compatibility.Data</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.io" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dataset\Busquedas\Buqueda de articulos en facturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Buqueda de Conceptos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda contactos ocasiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda de articulos incremental.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda de cajas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda de cuentas malas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda de Documentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda de Lotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda de Paneles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda de Ruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda de Secciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda de Utensilios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda metraje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda tipo ocasiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda tipo Relaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda Tipo Rutas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\Busqueda Usos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\Busquedas\total_almacen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\contactos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>contactos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Filtros\filtro comisiones fac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\filtro de egresos fac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Movimientos de Secciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Movimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de ocasiones contactos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de relaciones por Contactos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro Visitas Movil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro_General_Fac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Generar_Archivo_Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\buttonmaq.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modulos\inicio_fac.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Previews\Preview documentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\Preview fechas ocasiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\preview ocasiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\Preview reporte fac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Previews\Preview Secciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\entrada de ruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Entrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Monitoreo_ Habitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\pedir_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Procedo dedicatoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Procesar Cotizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso cuadrar caja fac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso de devolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso de espera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\proceso de facturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\proceso devolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Egreso de Caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\proceso para consultar inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Ventas Moviles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Procesos de secciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\prueba impresion matricial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Seleccionar Empresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Seleccionar Sucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro agregar contactos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de cajas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Conceptos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Contactos Ocasiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de cuentas malas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de email.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Lotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Paneles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de relaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Rutas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Secciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Usos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de utencilios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro Orden Ruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro Tipo Ruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro Tipos de Ocasiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\anticipos media carta.vb">
+      <DependentUpon>anticipos media carta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\Contactos con relacionados.vb">
+      <DependentUpon>Contactos con relacionados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\egresos media carta.vb">
+      <DependentUpon>egresos media carta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\factura media carta.vb">
+      <DependentUpon>factura media carta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\ingresos media carta.vb">
+      <DependentUpon>ingresos media carta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\notas media carta.vb">
+      <DependentUpon>notas media carta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\ocasiones contactos.vb">
+      <DependentUpon>ocasiones contactos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\relaciones contactos.vb">
+      <DependentUpon>relaciones contactos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\Reporte de cuadre de caja.vb">
+      <DependentUpon>Reporte de cuadre de caja.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\Reporte de egresos fac.vb">
+      <DependentUpon>Reporte de egresos fac.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\Reporte de movimientos fac.vb">
+      <DependentUpon>Reporte de movimientos fac.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\Reporte de tipo de ocasion.vb">
+      <DependentUpon>Reporte de tipo de ocasion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Facturacion\Reporte de tipo de relaciones.vb">
+      <DependentUpon>Reporte de tipo de relaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="Dataset\contactos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>contactos.Designer.vb</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Dataset\Busquedas\Buqueda de articulos en facturas.resx">
+      <DependentUpon>Buqueda de articulos en facturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Buqueda de Conceptos.resx">
+      <DependentUpon>Buqueda de Conceptos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda contactos ocasiones.resx">
+      <DependentUpon>Busqueda contactos ocasiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda de articulos incremental.resx">
+      <DependentUpon>Busqueda de articulos incremental.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda de cajas.resx">
+      <DependentUpon>Busqueda de cajas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda de cuentas malas.resx">
+      <DependentUpon>Busqueda de cuentas malas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda de Documentos.resx">
+      <DependentUpon>Busqueda de Documentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda de Lotes.resx">
+      <DependentUpon>Busqueda de Lotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda de Paneles.resx">
+      <DependentUpon>Busqueda de Paneles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda de Ruta.resx">
+      <DependentUpon>Busqueda de Ruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda de Secciones.resx">
+      <DependentUpon>Busqueda de Secciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda de Utensilios.resx">
+      <DependentUpon>Busqueda de Utensilios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda metraje.resx">
+      <DependentUpon>Busqueda metraje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda tipo ocasiones.resx">
+      <DependentUpon>Busqueda tipo ocasiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda tipo Relaciones.resx">
+      <DependentUpon>Busqueda tipo Relaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda Tipo Rutas.resx">
+      <DependentUpon>Busqueda Tipo Rutas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\Busqueda Usos.resx">
+      <DependentUpon>Busqueda Usos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataset\Busquedas\total_almacen.resx">
+      <DependentUpon>total_almacen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\filtro comisiones fac.resx">
+      <DependentUpon>filtro comisiones fac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\filtro de egresos fac.resx">
+      <DependentUpon>filtro de egresos fac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Movimientos de Secciones.resx">
+      <DependentUpon>Filtro de Movimientos de Secciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Movimientos.resx">
+      <DependentUpon>Filtro de Movimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de ocasiones contactos.resx">
+      <DependentUpon>Filtro de ocasiones contactos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de relaciones por Contactos.resx">
+      <DependentUpon>Filtro de relaciones por Contactos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro Visitas Movil.resx">
+      <DependentUpon>Filtro Visitas Movil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro_General_Fac.resx">
+      <DependentUpon>Filtro_General_Fac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Generar_Archivo_Ventas.resx">
+      <DependentUpon>Generar_Archivo_Ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\Preview documentos.resx">
+      <DependentUpon>Preview documentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\Preview fechas ocasiones.resx">
+      <DependentUpon>Preview fechas ocasiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\preview ocasiones.resx">
+      <DependentUpon>preview ocasiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\Preview reporte fac.resx">
+      <DependentUpon>Preview reporte fac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Previews\Preview Secciones.resx">
+      <DependentUpon>Preview Secciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\entrada de ruta.af.resx">
+      <DependentUpon>entrada de ruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\entrada de ruta.resx">
+      <DependentUpon>entrada de ruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Entrada.resx">
+      <DependentUpon>Entrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Monitoreo_ Habitaciones.resx">
+      <DependentUpon>Monitoreo_ Habitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\pedir_password.resx">
+      <DependentUpon>pedir_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Procedo dedicatoria.resx">
+      <DependentUpon>Procedo dedicatoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Procesar Cotizacion.resx">
+      <DependentUpon>Procesar Cotizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso cuadrar caja fac.resx">
+      <DependentUpon>Proceso cuadrar caja fac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso de devolucion.resx">
+      <DependentUpon>Proceso de devolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso de espera.resx">
+      <DependentUpon>Proceso de espera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\proceso de facturacion.resx">
+      <DependentUpon>proceso de facturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\proceso devolucion.resx">
+      <DependentUpon>proceso devolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Egreso de Caja.resx">
+      <DependentUpon>Proceso Egreso de Caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\proceso para consultar inventario.resx">
+      <DependentUpon>proceso para consultar inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Ventas Moviles.resx">
+      <DependentUpon>Proceso Ventas Moviles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Procesos de secciones.resx">
+      <DependentUpon>Procesos de secciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\prueba impresion matricial.resx">
+      <DependentUpon>prueba impresion matricial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Seleccionar Empresa.resx">
+      <DependentUpon>Seleccionar Empresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Seleccionar Sucursal.resx">
+      <DependentUpon>Seleccionar Sucursal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro agregar contactos.resx">
+      <DependentUpon>Registro agregar contactos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de cajas.resx">
+      <DependentUpon>Registro de cajas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Conceptos.resx">
+      <DependentUpon>Registro de Conceptos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Contactos Ocasiones.resx">
+      <DependentUpon>Registro de Contactos Ocasiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de cuentas malas.resx">
+      <DependentUpon>Registro de cuentas malas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de email.resx">
+      <DependentUpon>Registro de email.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Lotes.resx">
+      <DependentUpon>Registro de Lotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Paneles.resx">
+      <DependentUpon>Registro de Paneles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de relaciones.resx">
+      <DependentUpon>Registro de relaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Rutas.resx">
+      <DependentUpon>Registro de Rutas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Secciones.resx">
+      <DependentUpon>Registro de Secciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Usos.resx">
+      <DependentUpon>Registro de Usos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de utencilios.resx">
+      <DependentUpon>Registro de utencilios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro Orden Ruta.resx">
+      <DependentUpon>Registro Orden Ruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro Tipo Ruta.resx">
+      <DependentUpon>Registro Tipo Ruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro Tipos de Ocasiones.resx">
+      <DependentUpon>Registro Tipos de Ocasiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\anticipos media carta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>anticipos media carta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\Contactos con relacionados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Contactos con relacionados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\egresos media carta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>egresos media carta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\factura media carta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>factura media carta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\ingresos media carta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ingresos media carta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\notas media carta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>notas media carta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\ocasiones contactos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ocasiones contactos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\relaciones contactos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relaciones contactos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\Reporte de cuadre de caja.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de cuadre de caja.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\Reporte de egresos fac.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de egresos fac.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\Reporte de movimientos fac.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de movimientos fac.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\Reporte de tipo de ocasion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de tipo de ocasion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Facturacion\Reporte de tipo de relaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de tipo de relaciones.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Dataset\contactos.xsx">
+      <DependentUpon>contactos.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

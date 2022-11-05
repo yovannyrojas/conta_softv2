@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0ACAFAE-A74B-4CCE-9894-0546D3805D8B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Cuentas por Cobrar</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Cuentas_por_Cobrar</RootNamespace>
+    <StartupObject>Cuentas_por_Cobrar.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Cuentas por Cobrar.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Cuentas por Cobrar.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="StdFormat">
+      <Guid>{6B263850-900B-11D0-9484-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <ProjectReference Include="..\Configuracion Sistema\Configuracion Sistema.vbproj">
+      <Name>Configuracion Sistema</Name>
+      <Project>{7A2A77B2-A7D9-47EF-B5A9-4E742D84A25E}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Contabilidad\Contabilidad.vbproj">
+      <Name>Contabilidad</Name>
+      <Project>{2E688401-DE0F-4350-86C9-A2A9165D62A5}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Buequeda de Supervisores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de Articulos incremental.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de Condiciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de rango comisiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de Sucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de tipo clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de tipo de envio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de vendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda de zonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda documentos cxc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda tipo vendedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda Tipos de Servicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\balance a una fecha.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>balance a una fecha.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\lote.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lote.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Filtros\filtro antiguedad actual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro antiguedad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Anticipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro Facturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\filtro General.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro Historico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\filtro notas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro pagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\balance a una fecha fac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\previes antiguedad actual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\preview antiguedad por factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\preview Antiguedad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview bal a una fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\preview balance a una fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview cuadre lote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview documentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview Historico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview reporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\entrada cxc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Generacion seriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Medida Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso  de Facturas de Servicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso anticipos facturas .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Aplicacion Anticipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Facturas Lote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso forma de pago cxc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Nota Facturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso Pagos Facturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\proceso pagos monedas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Clientes Movil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Clientes Otros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Condiciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Rango.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Sucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Tipos Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Tipos de Envios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Tipos de Servicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Vendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Zonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro Tipos Vendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registros de Supervisores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte balance actuales.vb">
+      <DependentUpon>Reporte balance actuales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte cudre lote.vb">
+      <DependentUpon>Reporte cudre lote.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de anticipos Aplicados.vb">
+      <DependentUpon>Reporte de anticipos Aplicados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de anticipos detallados.vb">
+      <DependentUpon>Reporte de anticipos detallados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de Antiguedad de saldos.vb">
+      <DependentUpon>Reporte de Antiguedad de saldos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de bal fecha cxc.vb">
+      <DependentUpon>Reporte de bal fecha cxc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de bal fecha facturas.vb">
+      <DependentUpon>Reporte de bal fecha facturas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de Clientes.vb">
+      <DependentUpon>Reporte de Clientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de rango comisiones.vb">
+      <DependentUpon>Reporte de rango comisiones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de Servicios.vb">
+      <DependentUpon>Reporte de Servicios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de sucursales.vb">
+      <DependentUpon>Reporte de sucursales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de Tipos de Clientes.vb">
+      <DependentUpon>Reporte de Tipos de Clientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de Tipos de Envios.vb">
+      <DependentUpon>Reporte de Tipos de Envios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de Tipos de Vendedores.vb">
+      <DependentUpon>Reporte de Tipos de Vendedores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de Vendedores.vb">
+      <DependentUpon>Reporte de Vendedores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte de Zonas.vb">
+      <DependentUpon>Reporte de Zonas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas pendientes.vb">
+      <DependentUpon>Reporte facturas pendientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por clientes totalizado.vb">
+      <DependentUpon>Reporte facturas por clientes totalizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por clientes.vb">
+      <DependentUpon>Reporte facturas por clientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por sucursal totalizadas.vb">
+      <DependentUpon>Reporte facturas por sucursal totalizadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por sucursal.vb">
+      <DependentUpon>Reporte facturas por sucursal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por tipo totalizada.vb">
+      <DependentUpon>Reporte facturas por tipo totalizada.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por tipo.vb">
+      <DependentUpon>Reporte facturas por tipo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por vendedores totalizadas.vb">
+      <DependentUpon>Reporte facturas por vendedores totalizadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por vendedores.vb">
+      <DependentUpon>Reporte facturas por vendedores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por zonas totalizados.vb">
+      <DependentUpon>Reporte facturas por zonas totalizados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte facturas por zonas.vb">
+      <DependentUpon>Reporte facturas por zonas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte Historico clientes.vb">
+      <DependentUpon>Reporte Historico clientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte notas a Factura detallado.vb">
+      <DependentUpon>Reporte notas a Factura detallado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte notas a Factura totalizado.vb">
+      <DependentUpon>Reporte notas a Factura totalizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte Pagos a Factura detallado.vb">
+      <DependentUpon>Reporte Pagos a Factura detallado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Cuentas por Cobrar\Reporte Pagos a Factura totalizado.vb">
+      <DependentUpon>Reporte Pagos a Factura totalizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="Dataset\Antiguedad.xsd" />
+    <Content Include="Dataset\balance a una fecha.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>balance a una fecha.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Dataset\lote.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lote.Designer.vb</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Busquedas\Buequeda de Supervisores.resx">
+      <DependentUpon>Buequeda de Supervisores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de Articulos incremental.resx">
+      <DependentUpon>Busqueda de Articulos incremental.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de Clientes.resx">
+      <DependentUpon>Busqueda de Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de Condiciones.resx">
+      <DependentUpon>Busqueda de Condiciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de rango comisiones.resx">
+      <DependentUpon>Busqueda de rango comisiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de Sucursales.resx">
+      <DependentUpon>Busqueda de Sucursales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de tipo clientes.resx">
+      <DependentUpon>Busqueda de tipo clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de tipo de envio.resx">
+      <DependentUpon>Busqueda de tipo de envio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de Vendedores.resx">
+      <DependentUpon>Busqueda de vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda de zonas.resx">
+      <DependentUpon>Busqueda de zonas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda documentos cxc.resx">
+      <DependentUpon>Busqueda documentos cxc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda tipo vendedor.resx">
+      <DependentUpon>Busqueda tipo vendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda Tipos de Servicios.resx">
+      <DependentUpon>Busqueda Tipos de Servicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\filtro antiguedad actual.resx">
+      <DependentUpon>filtro antiguedad actual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro antiguedad.resx">
+      <DependentUpon>Filtro antiguedad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Anticipos.resx">
+      <DependentUpon>Filtro de Anticipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Clientes.af.resx">
+      <DependentUpon>Filtro de Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Clientes.resx">
+      <DependentUpon>Filtro de Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro Facturas.resx">
+      <DependentUpon>Filtro Facturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\filtro General.resx">
+      <DependentUpon>filtro General.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro Historico.resx">
+      <DependentUpon>Filtro Historico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\filtro notas.resx">
+      <DependentUpon>filtro notas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro pagos.resx">
+      <DependentUpon>Filtro pagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\balance a una fecha fac.resx">
+      <DependentUpon>balance a una fecha fac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\previes antiguedad actual.resx">
+      <DependentUpon>previes antiguedad actual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\preview antiguedad por factura.resx">
+      <DependentUpon>preview antiguedad por factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\preview Antiguedad.resx">
+      <DependentUpon>preview Antiguedad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview bal a una fecha.resx">
+      <DependentUpon>Preview bal a una fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\preview balance a una fecha.resx">
+      <DependentUpon>preview balance a una fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview cuadre lote.resx">
+      <DependentUpon>Preview cuadre lote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview documentos.resx">
+      <DependentUpon>Preview documentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview Historico.resx">
+      <DependentUpon>Preview Historico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview reporte.resx">
+      <DependentUpon>Preview reporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\entrada cxc.resx">
+      <DependentUpon>entrada cxc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Generacion seriales.resx">
+      <DependentUpon>Generacion seriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Medida Reportes.resx">
+      <DependentUpon>Medida Reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\password.resx">
+      <DependentUpon>password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso  de Facturas de Servicios.resx">
+      <DependentUpon>Proceso  de Facturas de Servicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso anticipos facturas .resx">
+      <DependentUpon>Proceso anticipos facturas .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Aplicacion Anticipos.resx">
+      <DependentUpon>Proceso Aplicacion Anticipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Facturas Lote.resx">
+      <DependentUpon>Proceso Facturas Lote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso forma de pago cxc.resx">
+      <DependentUpon>Proceso forma de pago cxc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Nota Facturas.resx">
+      <DependentUpon>Proceso Nota Facturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso Pagos Facturas.resx">
+      <DependentUpon>Proceso Pagos Facturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\proceso pagos monedas.resx">
+      <DependentUpon>proceso pagos monedas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Clientes Movil.resx">
+      <DependentUpon>Registro de Clientes Movil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Clientes Otros.resx">
+      <DependentUpon>Registro de Clientes Otros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Clientes.resx">
+      <DependentUpon>Registro de Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Condiciones.resx">
+      <DependentUpon>Registro de Condiciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Rango.resx">
+      <DependentUpon>Registro de Rango.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Sucursales.resx">
+      <DependentUpon>Registro de Sucursales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Tipos Clientes.resx">
+      <DependentUpon>Registro de Tipos Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Tipos de Envios.resx">
+      <DependentUpon>Registro de Tipos de Envios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Tipos de Servicios.resx">
+      <DependentUpon>Registro de Tipos de Servicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Vendedores.resx">
+      <DependentUpon>Registro de Vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Zonas.resx">
+      <DependentUpon>Registro de Zonas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro Tipos Vendedores.resx">
+      <DependentUpon>Registro Tipos Vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registros de Supervisores.resx">
+      <DependentUpon>Registros de Supervisores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte balance actuales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte balance actuales.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte cudre lote.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte cudre lote.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de anticipos Aplicados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de anticipos Aplicados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de anticipos detallados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de anticipos detallados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de Antiguedad de saldos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Antiguedad de saldos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de bal fecha cxc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de bal fecha cxc.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de bal fecha facturas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de bal fecha facturas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de Clientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Clientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de rango comisiones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de rango comisiones.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de Servicios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Servicios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de sucursales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de sucursales.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de Tipos de Clientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Tipos de Clientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de Tipos de Envios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Tipos de Envios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de Tipos de Vendedores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Tipos de Vendedores.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de Vendedores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Vendedores.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte de Zonas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Zonas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas pendientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas pendientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por clientes totalizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por clientes totalizado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por clientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por clientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por sucursal totalizadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por sucursal totalizadas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por sucursal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por sucursal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por tipo totalizada.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por tipo totalizada.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por tipo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por tipo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por vendedores totalizadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por vendedores totalizadas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por vendedores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por vendedores.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por zonas totalizados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por zonas totalizados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte facturas por zonas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte facturas por zonas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte Historico clientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte Historico clientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte notas a Factura detallado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte notas a Factura detallado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte notas a Factura totalizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte notas a Factura totalizado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte Pagos a Factura detallado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte Pagos a Factura detallado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cuentas por Cobrar\Reporte Pagos a Factura totalizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte Pagos a Factura totalizado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Dataset\Antiguedad.xsx">
+      <DependentUpon>Antiguedad.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\balance a una fecha.xsx">
+      <DependentUpon>balance a una fecha.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\lote.xsx">
+      <DependentUpon>lote.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

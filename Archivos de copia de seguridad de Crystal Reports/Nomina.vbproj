@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FC8FD5A-7518-42AF-A9A3-4546582644AA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Nomina</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Nomina</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Nomina.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Nomina.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole1">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole2">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole3">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole4">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <ProjectReference Include="..\Administrador Sistema\Administrador Sistema.vbproj">
+      <Name>Administrador Sistema</Name>
+      <Project>{9B284435-F748-4738-8D1C-7169078ADB8B}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Configuracion Sistema\Configuracion Sistema.vbproj">
+      <Name>Configuracion Sistema</Name>
+      <Project>{7A2A77B2-A7D9-47EF-B5A9-4E742D84A25E}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Cuentas por Cobrar\Cuentas por Cobrar.vbproj">
+      <Name>Cuentas por Cobrar</Name>
+      <Project>{C0ACAFAE-A74B-4CCE-9894-0546D3805D8B}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Facturacion\Facturacion.vbproj">
+      <Name>Facturacion</Name>
+      <Project>{01448E21-8271-460C-AC9D-F61B79A44E14}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <Name>Interop.Microsoft.Office.Core</Name>
+      <HintPath>bin\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Npgsql">
+      <Name>Npgsql</Name>
+      <HintPath>..\..\Program Files\Npgsql\bin\ms1.1\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole">
+      <Name>stdole</Name>
+      <HintPath>..\..\Archivos de programa\Microsoft.NET\Primary Interop Assemblies\stdole.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="system.io" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Afp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Ars.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Concepto_Prestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Departamentos_nom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Estatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Etapas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Grupos_emp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Mensajes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Niveles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Ocupaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Reloj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Sangre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Tiponomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_tipo_Descuento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Tipo_Horas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Tipo_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Titulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Busqueda_de_Turnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\General.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>General.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Pagos Prestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro de Prestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro Historico Prestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro_de_Asistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro_de_Empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro_de_nomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro_de_Prenomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Filtro_General_Nom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtros\Generar_Nomina_Electronica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview de historico Prestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview reporte Nom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Asignacion_Orden_Grupos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cambio_de_Salario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cambio_estado_orden_Trabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion_de_Horarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Consulta Cambio de Salario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Importar_Ponche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Medida Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Ordenes_de_Trabajos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Procesar_Nomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Procesar_Ponches.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso_Cerrar_Nomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso_de_Apertura_nomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso_de_Distribucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Proceso_de_Prenomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro de Horas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Afp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_De_Ars.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Concepto_Prestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Departamentos_nom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Descuentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Etapas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Grupos_emp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Ingresos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Mensaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Niveles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Ocupaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Prestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Reloj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Sangre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Tiponomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Titulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_de_Turnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_dias_feriado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_Periodo_trabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_Tipo_Descuentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_Tipo_Horas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Registro_Tipo_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Regsitro_de_Estatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Saldo Efectivo Prestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte de  Empresas AFP.vb">
+      <DependentUpon>Reporte de  Empresas AFP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Departamentos.vb">
+      <DependentUpon>Reporte de Departamentos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Dias Feriados.vb">
+      <DependentUpon>Reporte de Dias Feriados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Empresas ARS.vb">
+      <DependentUpon>Reporte de Empresas ARS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Estados.vb">
+      <DependentUpon>Reporte de Estados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Grupos.vb">
+      <DependentUpon>Reporte de Grupos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Niveles Academicos.vb">
+      <DependentUpon>Reporte de Niveles Academicos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Ocupaciones.vb">
+      <DependentUpon>Reporte de Ocupaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Reloj.vb">
+      <DependentUpon>Reporte de Reloj.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Tipos  Nomina.vb">
+      <DependentUpon>Reporte de Tipos  Nomina.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Tipos  Sangres.vb">
+      <DependentUpon>Reporte de Tipos  Sangres.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Titulos Cortesias.vb">
+      <DependentUpon>Reporte de Titulos Cortesias.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte de Turnos.vb">
+      <DependentUpon>Reporte de Turnos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Reporte Historico de  Prestamos.vb">
+      <DependentUpon>Reporte Historico de  Prestamos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="Dataset\General.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>General.Designer.vb</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Afp.resx">
+      <DependentUpon>Busqueda_de_Afp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Ars.resx">
+      <DependentUpon>Busqueda_de_Ars.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Concepto_Prestamos.resx">
+      <DependentUpon>Busqueda_de_Concepto_Prestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Departamentos_nom.resx">
+      <DependentUpon>Busqueda_de_Departamentos_nom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Empleado.resx">
+      <DependentUpon>Busqueda_de_Empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Estatus.resx">
+      <DependentUpon>Busqueda_de_Estatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Etapas.resx">
+      <DependentUpon>Busqueda_de_Etapas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Grupos_emp.resx">
+      <DependentUpon>Busqueda_de_Grupos_emp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Mensajes.resx">
+      <DependentUpon>Busqueda_de_Mensajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Niveles.resx">
+      <DependentUpon>Busqueda_de_Niveles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Ocupaciones.resx">
+      <DependentUpon>Busqueda_de_Ocupaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Reloj.resx">
+      <DependentUpon>Busqueda_de_Reloj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Sangre.resx">
+      <DependentUpon>Busqueda_de_Sangre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Tiponomina.resx">
+      <DependentUpon>Busqueda_de_Tiponomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_tipo_Descuento.resx">
+      <DependentUpon>Busqueda_de_tipo_Descuento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Tipo_Horas.af.resx">
+      <DependentUpon>Busqueda_de_Tipo_Horas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Tipo_Horas.resx">
+      <DependentUpon>Busqueda_de_Tipo_Horas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Tipo_Ingreso.resx">
+      <DependentUpon>Busqueda_de_Tipo_Ingreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Titulos.resx">
+      <DependentUpon>Busqueda_de_Titulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Busqueda_de_Turnos.resx">
+      <DependentUpon>Busqueda_de_Turnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Pagos Prestamos.resx">
+      <DependentUpon>Filtro de Pagos Prestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro de Prestamos.resx">
+      <DependentUpon>Filtro de Prestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro Historico Prestamos.resx">
+      <DependentUpon>Filtro Historico Prestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro_de_Asistencia.resx">
+      <DependentUpon>Filtro_de_Asistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro_de_Empleado.resx">
+      <DependentUpon>Filtro_de_Empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro_de_nomina.resx">
+      <DependentUpon>Filtro_de_nomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro_de_Prenomina.resx">
+      <DependentUpon>Filtro_de_Prenomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Filtro_General_Nom.resx">
+      <DependentUpon>Filtro_General_Nom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtros\Generar_Nomina_Electronica.resx">
+      <DependentUpon>Generar_Nomina_Electronica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview de historico Prestamos.resx">
+      <DependentUpon>Preview de historico Prestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview reporte Nom.resx">
+      <DependentUpon>Preview reporte Nom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Asignacion_Orden_Grupos.resx">
+      <DependentUpon>Asignacion_Orden_Grupos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cambio_de_Salario.resx">
+      <DependentUpon>Cambio_de_Salario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cambio_estado_orden_Trabajo.resx">
+      <DependentUpon>Cambio_estado_orden_Trabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion_de_Horarios.resx">
+      <DependentUpon>Configuracion_de_Horarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Consulta Cambio de Salario.resx">
+      <DependentUpon>Consulta Cambio de Salario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Importar_Ponche.resx">
+      <DependentUpon>Importar_Ponche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Medida Reportes.resx">
+      <DependentUpon>Medida Reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Ordenes_de_Trabajos.resx">
+      <DependentUpon>Ordenes_de_Trabajos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Procesar_Nomina.resx">
+      <DependentUpon>Procesar_Nomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Procesar_Ponches.resx">
+      <DependentUpon>Procesar_Ponches.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso_Cerrar_Nomina.resx">
+      <DependentUpon>Proceso_Cerrar_Nomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso_de_Apertura_nomina.resx">
+      <DependentUpon>Proceso_de_Apertura_nomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso_de_Distribucion.resx">
+      <DependentUpon>Proceso_de_Distribucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Proceso_de_Prenomina.resx">
+      <DependentUpon>Proceso_de_Prenomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro de Horas.resx">
+      <DependentUpon>Registro de Horas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Afp.resx">
+      <DependentUpon>Registro_de_Afp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_De_Ars.resx">
+      <DependentUpon>Registro_De_Ars.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Concepto_Prestamos.resx">
+      <DependentUpon>Registro_de_Concepto_Prestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Departamentos_nom.resx">
+      <DependentUpon>Registro_de_Departamentos_nom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Descuentos.resx">
+      <DependentUpon>Registro_de_Descuentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Empleados.resx">
+      <DependentUpon>Registro_de_Empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Etapas.resx">
+      <DependentUpon>Registro_de_Etapas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Grupos_emp.resx">
+      <DependentUpon>Registro_de_Grupos_emp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Ingresos.resx">
+      <DependentUpon>Registro_de_Ingresos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Mensaje.resx">
+      <DependentUpon>Registro_de_Mensaje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Niveles.resx">
+      <DependentUpon>Registro_de_Niveles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Ocupaciones.resx">
+      <DependentUpon>Registro_de_Ocupaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Prestamos.resx">
+      <DependentUpon>Registro_de_Prestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Reloj.resx">
+      <DependentUpon>Registro_de_Reloj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Sangre.resx">
+      <DependentUpon>Registro_de_Sangre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Tiponomina.resx">
+      <DependentUpon>Registro_de_Tiponomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Titulo.resx">
+      <DependentUpon>Registro_de_Titulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_de_Turnos.resx">
+      <DependentUpon>Registro_de_Turnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_dias_feriado.resx">
+      <DependentUpon>Registro_dias_feriado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_Periodo_trabajo.resx">
+      <DependentUpon>Registro_Periodo_trabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_Tipo_Descuentos.resx">
+      <DependentUpon>Registro_Tipo_Descuentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_Tipo_Horas.resx">
+      <DependentUpon>Registro_Tipo_Horas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Registro_Tipo_Ingreso.resx">
+      <DependentUpon>Registro_Tipo_Ingreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Regsitro_de_Estatus.resx">
+      <DependentUpon>Regsitro_de_Estatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Saldo Efectivo Prestamos.resx">
+      <DependentUpon>Saldo Efectivo Prestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de  Empresas AFP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de  Empresas AFP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Departamentos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Departamentos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Dias Feriados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Dias Feriados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Empresas ARS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Empresas ARS.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Estados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Estados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Grupos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Grupos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Niveles Academicos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Niveles Academicos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Ocupaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Ocupaciones.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Reloj.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Reloj.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Tipos  Nomina.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Tipos  Nomina.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Tipos  Sangres.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Tipos  Sangres.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Titulos Cortesias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Titulos Cortesias.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte de Turnos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte de Turnos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte Historico de  Prestamos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte Historico de  Prestamos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Dataset\General.xsx">
+      <DependentUpon>General.xsd</DependentUpon>
+    </None>
+    <Fakes Include="Fakes\Npgsql.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

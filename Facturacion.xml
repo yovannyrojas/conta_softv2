@@ -1,0 +1,105 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Facturacion
+</name>
+</assembly>
+<members>
+<member name="T:Facturacion.contactos">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.contactosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.relacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.ocasionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.cuadreDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.fac_visitasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.inv_articulos2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.contactosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.relacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.ocasionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.cuadreRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.fac_visitasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.inv_articulos2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Facturacion.contactos.contactosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Facturacion.contactos.relacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Facturacion.contactos.ocasionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Facturacion.contactos.cuadreRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Facturacion.contactos.fac_visitasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Facturacion.contactos.inv_articulos2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>

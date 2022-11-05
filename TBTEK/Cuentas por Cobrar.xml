@@ -1,0 +1,95 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Cuentas por Cobrar
+</name>
+</assembly>
+<members>
+<member name="T:Cuentas_por_Cobrar.balance_a_una_fecha">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.balance_a_una_fecha.cxc_balanceDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.balance_a_una_fecha.cxc_balanceRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.balance_a_una_fecha.cxc_balanceRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.loteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.anticiposDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.ventasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.datosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.loteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.anticiposRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.ventasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.datosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.loteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.anticiposRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.ventasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cuentas_por_Cobrar.lote.datosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>
